@@ -54,46 +54,71 @@
   <ItemGroup>
     <Content Include="CSharpSnippets\IfStringIsNullOrWhitespaceBraces.snippet">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
     <Content Include="CSharpSnippets\IfStringIsNotNullOrWhitespace.snippet">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
     <Content Include="CSharpSnippets\IfStringIsNotNullOrWhitespaceBraces.snippet">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
     <Content Include="CSharpSnippets\IfCountGreaterZero.snippet">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
     <Content Include="CSharpSnippets\IfCountGreaterZeroBraces.snippet">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
     <Content Include="CSharpSnippets\IfCountEqualsZeroBraces.snippet">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
     <Content Include="CSharpSnippets\IfCountEqualsZero.snippet">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
     <Content Include="CSharpSnippets\ConditionalStringIsNotNullOrWhitespace.snippet">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
     <Content Include="CSharpSnippets\ConditionalCountGreaterZero.snippet">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
     <Content Include="CSharpSnippets\ConditionalCountEqualsZero.snippet">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
     <Content Include="CSharpSnippets\ConditionalLengthGreaterZero.snippet">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
     <Content Include="CSharpSnippets\ConditionalLengthEqualsZero.snippet">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <None Include="CSharpSnippets\IfLengthEqualsZero.snippet" />
-    <None Include="CSharpSnippets\IfLengthEqualsZeroBraces.snippet" />
-    <None Include="CSharpSnippets\IfLengthGreaterZero.snippet" />
-    <None Include="CSharpSnippets\IfLengthGreaterZeroBraces.snippet" />
+    <Content Include="CSharpSnippets\IfLengthEqualsZero.snippet">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="CSharpSnippets\IfLengthEqualsZeroBraces.snippet">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="CSharpSnippets\IfLengthGreaterZero.snippet">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="CSharpSnippets\IfLengthGreaterZeroBraces.snippet">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
     <Content Include="CSharpSnippets\ConditionalStringIsNullOrWhitespace.snippet">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
     <None Include="source.extension.vsixmanifest">
       <SubType>Designer</SubType>
