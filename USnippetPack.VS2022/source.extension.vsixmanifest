@@ -4,6 +4,8 @@
         <Identity Id="uSnippetPack.cd839adc-ef78-496a-a991-22769f2f4cd1" Version="1.0" Language="en-US" Publisher="Sergei Zaitsev" />
         <DisplayName>uSnippetPack</DisplayName>
         <Description xml:space="preserve">Simple c# snippet pack for Visual Studio 2022</Description>
+        <Icon>logo-color.png</Icon>
+        <PreviewImage>logo-color.png</PreviewImage>
         <Tags>snippet</Tags>
     </Metadata>
     <Installation>

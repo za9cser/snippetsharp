@@ -1,15 +1,3 @@
-﻿// C# - Async Methods
+﻿// C#
 [$RootKey$\Languages\CodeExpansions\CSharp\Paths]
-"MoreAsyncMethods"="$PackageFolder$\MoreMethods\MoreAsyncMethods"
-
-// C# - Instance Methods
-[$RootKey$\Languages\CodeExpansions\CSharp\Paths]
-"MoreInstanceMethods"="$PackageFolder$\MoreMethods\MoreInstanceMethods"
-
-// C# - Static Methods
-[$RootKey$\Languages\CodeExpansions\CSharp\Paths]
-"MoreStaticMethods"="$PackageFolder$\MoreMethods\MoreStaticMethods"
-
-// C# - Constructors
-[$RootKey$\Languages\CodeExpansions\CSharp\Paths]
-"MoreConstructors"="$PackageFolder$\MoreConstructors"
+"uSnippetPack"="$PackageFolder$\CSharpSnippets"
