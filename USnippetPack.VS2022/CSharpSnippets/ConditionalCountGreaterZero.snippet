@@ -12,7 +12,7 @@
       </Description>
       <HelpUrl>
       </HelpUrl>
-      <Shortcut>ifcez</Shortcut>
+      <Shortcut>ccgz</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
@@ -23,9 +23,22 @@
           <Function>
           </Function>
         </Literal>
+        <Literal Editable="true">
+          <ID>true</ID>
+          <ToolTip>true</ToolTip>
+          <Default>true</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>false</ID>
+          <ToolTip>false</ToolTip>
+          <Default>false</Default>
+          <Function>
+          </Function>
+        </Literal>
       </Declarations>
-      <Code Language="csharp" Delimiter="$"><![CDATA[if($arg$?.Count is null or 0)
-   $end$]]></Code>
+      <Code Language="csharp" Delimiter="$"><![CDATA[$arg$?.Count > 0 ? $true$ : $false$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

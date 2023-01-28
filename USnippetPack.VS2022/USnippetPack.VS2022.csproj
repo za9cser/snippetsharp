@@ -73,10 +73,28 @@
     <Content Include="CSharpSnippets\IfCountEqualsZero.snippet">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="CSharpSnippets\ConditionalStringIsNotNullOrWhitespace.snippet">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CSharpSnippets\ConditionalCountGreaterZero.snippet">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CSharpSnippets\ConditionalCountEqualsZero.snippet">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CSharpSnippets\ConditionalLengthGreaterZero.snippet">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CSharpSnippets\ConditionalLengthEqualsZero.snippet">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="CSharpSnippets\IfLengthEqualsZero.snippet" />
     <None Include="CSharpSnippets\IfLengthEqualsZeroBraces.snippet" />
     <None Include="CSharpSnippets\IfLengthGreaterZero.snippet" />
     <None Include="CSharpSnippets\IfLengthGreaterZeroBraces.snippet" />
+    <Content Include="CSharpSnippets\ConditionalStringIsNullOrWhitespace.snippet">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="source.extension.vsixmanifest">
       <SubType>Designer</SubType>
     </None>
