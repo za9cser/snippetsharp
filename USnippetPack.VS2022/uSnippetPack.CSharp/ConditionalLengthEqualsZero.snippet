@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>clez</Title>
+      <Author>Sergei Zaitsev
+      </Author>
+      <Description>$arg$?.Length is null or 0 ? $true$ : $false$ expression
+      </Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>clez</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>arg</ID>
+          <ToolTip>arg</ToolTip>
+          <Default>arg</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>true</ID>
+          <ToolTip>true</ToolTip>
+          <Default>true</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>false</ID>
+          <ToolTip>false</ToolTip>
+          <Default>false</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp" Delimiter="$"><![CDATA[$arg$?.Length is null or 0 ? $true$ : $false$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
