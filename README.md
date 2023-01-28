@@ -1,5 +1,5 @@
 # uSnippetPack
-Simple snippets pack that provides checks for strings and collections
+Simple snippets pack that provides checks for strings and collections. This pack inspired by [Snippetica](https://github.com/JosefPihrt/Snippetica). I do recommend use uSnippetPack with Snippetica
 
 # Available snippets
 
