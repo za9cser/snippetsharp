@@ -1,4 +1,4 @@
-#uSnippetPack
+# uSnippetPack
 Simple snippets pack that provides checks for strings and collections
 
 # Available snippets
