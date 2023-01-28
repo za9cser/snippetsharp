@@ -5,14 +5,15 @@
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>s</Title>
-      <Author>
+      <Title>ifsnw</Title>
+      <Author>Sergei Zaitsev
       </Author>
       <Description>
+	  if(string.IsNullOrWhitespace($arg$)) expression
       </Description>
       <HelpUrl>
       </HelpUrl>
-      <Shortcut>csnnw</Shortcut>
+      <Shortcut>ifsnw</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
@@ -22,23 +23,10 @@
           <Default>arg</Default>
           <Function>
           </Function>
-        </Literal>
-        <Literal Editable="true">
-          <ID>true</ID>
-          <ToolTip>true</ToolTip>
-          <Default>true</Default>
-          <Function>
-          </Function>
-        </Literal>
-        <Literal Editable="true">
-          <ID>false</ID>
-          <ToolTip>false</ToolTip>
-          <Default>false</Default>
-          <Function>
-          </Function>
-        </Literal>
+        </Literal>		
       </Declarations>
-      <Code Language="csharp" Delimiter="$"><![CDATA[!string.IsNullOrWhitespace($arg$) ? $true$ : $false$]]></Code>
+      <Code Language="csharp" Delimiter="$"><![CDATA[if(string.IsNullOrWhiteSpace($arg$))
+   $selected$ $end$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

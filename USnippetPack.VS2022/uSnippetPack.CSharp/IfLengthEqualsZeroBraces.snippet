@@ -5,15 +5,15 @@
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>
-      </Title>
-      <Author>
+      <Title>iflezb</Title>
+      <Author>Sergei Zaitsev
       </Author>
       <Description>
+	  if($arg$?.Count is null or 0) expression with braces
       </Description>
       <HelpUrl>
       </HelpUrl>
-      <Shortcut>ifsnwb</Shortcut>
+      <Shortcut>iflezb</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
@@ -24,11 +24,19 @@
           <Function>
           </Function>
         </Literal>
+		<Literal Editable="true">
+          <ID>end</ID>
+          <ToolTip>end</ToolTip>
+          <Default>end</Default>
+          <Function>
+          </Function>
+        </Literal>
       </Declarations>
-      <Code Language="csharp" Delimiter="$"><![CDATA[if(string.IsNullOrWhitespace($arg$))
-{
+      <Code Language="csharp" Delimiter="$"><![CDATA[if($arg$?.Count is null or 0)
+{   
     $end$
-}]]></Code>
+}
+]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

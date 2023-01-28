@@ -5,15 +5,15 @@
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>ifcez</Title>
+      <Title>iflez</Title>
       <Author>Sergei Zaitsev
       </Author>
       <Description>
-	  if($arg$?.Count is null or 0 expression
+	  if (array.Length is null or 0) expression
       </Description>
       <HelpUrl>
       </HelpUrl>
-      <Shortcut>ifcez</Shortcut>
+      <Shortcut>iflez</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
@@ -24,8 +24,15 @@
           <Function>
           </Function>
         </Literal>
+		<Literal Editable="true">
+          <ID>end</ID>
+          <ToolTip>end</ToolTip>
+          <Default>end</Default>
+          <Function>
+          </Function>
+        </Literal>
       </Declarations>
-      <Code Language="csharp" Delimiter="$"><![CDATA[if($arg$?.Count is null or 0)
+      <Code Language="csharp" Delimiter="$"><![CDATA[if($arg$?.Length is null or 0)
    $end$]]></Code>
     </Snippet>
   </CodeSnippet>

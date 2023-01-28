@@ -5,15 +5,15 @@
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>ifcgz</Title>
+      <Title>ifcez</Title>
       <Author>Sergei Zaitsev
       </Author>
       <Description>
-	  if($arg$?.Count > 0)
+	  if($arg$?.Count is null or 0 expression
       </Description>
       <HelpUrl>
       </HelpUrl>
-      <Shortcut>ifcgz</Shortcut>
+      <Shortcut>ifcez</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
@@ -24,8 +24,15 @@
           <Function>
           </Function>
         </Literal>
+		<Literal Editable="true">
+          <ID>end</ID>
+          <ToolTip>end</ToolTip>
+          <Default>end</Default>
+          <Function>
+          </Function>
+        </Literal>
       </Declarations>
-      <Code Language="csharp" Delimiter="$"><![CDATA[if($arg$?.Count > 0)
+      <Code Language="csharp" Delimiter="$"><![CDATA[if($arg$?.Count is null or 0)
    $end$]]></Code>
     </Snippet>
   </CodeSnippet>

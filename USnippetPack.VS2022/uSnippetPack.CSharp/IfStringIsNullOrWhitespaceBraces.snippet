@@ -5,15 +5,15 @@
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>iflez</Title>
+      <Title>ifsnwb
+      </Title>
       <Author>Sergei Zaitsev
       </Author>
-      <Description>
-	  if (array.Length is null or 0) expression
+      <Description>if(string.IsNullOrWhitespace($arg$)) expression with braces
       </Description>
       <HelpUrl>
       </HelpUrl>
-      <Shortcut>iflez</Shortcut>
+      <Shortcut>ifsnwb</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
@@ -23,10 +23,12 @@
           <Default>arg</Default>
           <Function>
           </Function>
-        </Literal>
+        </Literal>		
       </Declarations>
-      <Code Language="csharp" Delimiter="$"><![CDATA[if($arg$?.Length is null or 0)
-   $end$]]></Code>
+      <Code Language="csharp" Delimiter="$"><![CDATA[if(string.IsNullOrWhiteSpace($arg$))
+{
+    $selected$ $end$
+}]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

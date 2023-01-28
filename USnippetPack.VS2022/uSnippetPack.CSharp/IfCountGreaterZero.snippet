@@ -5,15 +5,15 @@
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>ifsnw</Title>
+      <Title>ifcgz</Title>
       <Author>Sergei Zaitsev
       </Author>
       <Description>
-	  if(string.IsNullOrWhitespace($arg$)) expression
+	  if($arg$?.Count > 0)
       </Description>
       <HelpUrl>
       </HelpUrl>
-      <Shortcut>ifsnw</Shortcut>
+      <Shortcut>ifcgz</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
@@ -24,8 +24,15 @@
           <Function>
           </Function>
         </Literal>
+		<Literal Editable="true">
+          <ID>end</ID>
+          <ToolTip>end</ToolTip>
+          <Default>end</Default>
+          <Function>
+          </Function>
+        </Literal>
       </Declarations>
-      <Code Language="csharp" Delimiter="$"><![CDATA[if(string.IsNullOrWhitespace($arg$))
+      <Code Language="csharp" Delimiter="$"><![CDATA[if($arg$?.Count > 0)
    $end$]]></Code>
     </Snippet>
   </CodeSnippet>
