@@ -5,11 +5,11 @@
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>ifsnwb
+      <Title>if string is null or whitespace w/ braces
       </Title>
       <Author>Sergei Zaitsev
       </Author>
-      <Description>if(string.IsNullOrWhitespace($arg$)) expression with braces
+      <Description>if statement to check string is null or whitespace w/ braces
       </Description>
       <HelpUrl>
       </HelpUrl>
@@ -18,14 +18,12 @@
     <Snippet>
       <Declarations>
         <Literal Editable="true">
-          <ID>arg</ID>
-          <ToolTip>arg</ToolTip>
-          <Default>arg</Default>
-          <Function>
-          </Function>
+          <ID>str</ID>
+          <ToolTip>String to evaluate</ToolTip>
+          <Default>str</Default>          
         </Literal>		
       </Declarations>
-      <Code Language="csharp" Delimiter="$"><![CDATA[if(string.IsNullOrWhiteSpace($arg$))
+      <Code Language="csharp" Delimiter="$"><![CDATA[if(string.IsNullOrWhiteSpace($str$))
 {
     $selected$ $end$
 }]]></Code>

@@ -1,40 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
-  <CodeSnippet Format="1.0.0">
-    <Header>
-      <SnippetTypes>
-        <SnippetType>Expansion</SnippetType>
-      </SnippetTypes>
-      <Title>ifsnnw
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+			<Title>if string is not not null or whitespace
       </Title>
-      <Author>Sergei Zaitsev
+			<Author>Sergei Zaitsev
       </Author>
-      <Description>
-	  if(!string.IsNullOrWhitespace($arg$)) expression
+			<Description>
+	  if statement string is not not null or whitespace
       </Description>
-      <HelpUrl>
+			<HelpUrl>
       </HelpUrl>
-      <Shortcut>ifsnnw</Shortcut>
-    </Header>
-    <Snippet>
-      <Declarations>
-        <Literal Editable="true">
-          <ID>arg</ID>
-          <ToolTip>arg</ToolTip>
-          <Default>arg</Default>
-          <Function>
-          </Function>
-        </Literal>
-		<Literal Editable="true">
-          <ID>end</ID>
-          <ToolTip>end</ToolTip>
-          <Default>end</Default>
-          <Function>
-          </Function>
-        </Literal>
-      </Declarations>
-      <Code Language="csharp" Delimiter="$"><![CDATA[if(!string.IsNullOrWhiteSpace($arg$))
+			<Shortcut>ifsnnw</Shortcut>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>str</ID>
+					<ToolTip>String to evaluate</ToolTip>
+					<Default>str</Default>
+				</Literal>				
+			</Declarations>
+			<Code Language="csharp" Delimiter="$"><![CDATA[if(!string.IsNullOrWhiteSpace($str$))
    $end$]]></Code>
-    </Snippet>
-  </CodeSnippet>
+		</Snippet>
+	</CodeSnippet>
 </CodeSnippets>

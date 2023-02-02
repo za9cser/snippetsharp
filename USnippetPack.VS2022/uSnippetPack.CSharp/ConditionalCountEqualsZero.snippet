@@ -5,38 +5,30 @@
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>ccez</Title>
+      <Title>conditional operator  collection is null or empty (count)</Title>
       <Author>Sergei Zaitsev
       </Author>
-      <Description>$arg$?.Count is null or 0 ? $true$ : $false$
+      <Description>conditional operator with condition whether collection is null or empty (count)
       </Description>
-      <HelpUrl>
-      </HelpUrl>
       <Shortcut>ccez</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
         <Literal Editable="true">
           <ID>arg</ID>
-          <ToolTip>arg</ToolTip>
+          <ToolTip>Collection</ToolTip>
           <Default>arg</Default>
-          <Function>
-          </Function>
-        </Literal>
-        <Literal Editable="true">
-          <ID>true</ID>
-          <ToolTip>true</ToolTip>
-          <Default>true</Default>
-          <Function>
-          </Function>
-        </Literal>
-        <Literal Editable="true">
-          <ID>false</ID>
-          <ToolTip>false</ToolTip>
-          <Default>false</Default>
-          <Function>
-          </Function>
-        </Literal>
+		</Literal>
+        <Literal>
+			<ID>false</ID>
+			<ToolTip>False expression</ToolTip>
+			<Default>false</Default>
+		</Literal>
+		<Literal>
+			<ID>true</ID>
+			<ToolTip>True expression</ToolTip>
+			<Default>true</Default>
+		</Literal>
       </Declarations>
       <Code Language="csharp" Delimiter="$"><![CDATA[$arg$?.Count is null or 0 ? $true$ : $false$]]></Code>
     </Snippet>

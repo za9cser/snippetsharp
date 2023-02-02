@@ -4,12 +4,12 @@
     <Header>
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
-      </SnippetTypes>
-      <Title>ifsnw</Title>
+      </SnippetTypes>     
+     <Title>if string is not null or whitespace
+      </Title>
       <Author>Sergei Zaitsev
       </Author>
-      <Description>
-	  if(string.IsNullOrWhitespace($arg$)) expression
+      <Description>if statement to check string is not null or whitespace
       </Description>
       <HelpUrl>
       </HelpUrl>
@@ -18,12 +18,10 @@
     <Snippet>
       <Declarations>
         <Literal Editable="true">
-          <ID>arg</ID>
-          <ToolTip>arg</ToolTip>
-          <Default>arg</Default>
-          <Function>
-          </Function>
-        </Literal>		
+          <ID>str</ID>
+          <ToolTip>String to evaluate</ToolTip>
+          <Default>str</Default>          
+        </Literal>
       </Declarations>
       <Code Language="csharp" Delimiter="$"><![CDATA[if(string.IsNullOrWhiteSpace($arg$))
    $selected$ $end$]]></Code>
