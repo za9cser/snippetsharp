@@ -5,32 +5,21 @@
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>iflezb</Title>
+      <Title>if collection is null or empty (length) w/ braces
+      </Title>
       <Author>Sergei Zaitsev
       </Author>
-      <Description>
-	  if($arg$?.Count is null or 0) expression with braces
+      <Description>if statement to check collection is null or empty (length) w/ braces
       </Description>
-      <HelpUrl>
-      </HelpUrl>
       <Shortcut>iflezb</Shortcut>
     </Header>
     <Snippet>
-      <Declarations>
-        <Literal Editable="true">
+     <Declarations>
+         <Literal Editable="true">
           <ID>arg</ID>
-          <ToolTip>arg</ToolTip>
+          <ToolTip>Collection</ToolTip>
           <Default>arg</Default>
-          <Function>
-          </Function>
-        </Literal>
-		<Literal Editable="true">
-          <ID>end</ID>
-          <ToolTip>end</ToolTip>
-          <Default>end</Default>
-          <Function>
-          </Function>
-        </Literal>
+		</Literal>
       </Declarations>
       <Code Language="csharp" Delimiter="$"><![CDATA[if($arg$?.Count is null or 0)
 {   

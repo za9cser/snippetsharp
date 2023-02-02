@@ -4,33 +4,22 @@
     <Header>
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
-      </SnippetTypes>
-      <Title>iflgzb</Title>
+      </SnippetTypes>      
+       <Title>if collection length is greather zero w/ braces
+      </Title>
       <Author>Sergei Zaitsev
       </Author>
-      <Description>
-	  if($arg$?.Length > 0) expression with braces
+      <Description>if statement to check collection length is greather zero w/ braces
       </Description>
-      <HelpUrl>
-      </HelpUrl>
       <Shortcut>iflgzb</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
         <Literal Editable="true">
           <ID>arg</ID>
-          <ToolTip>arg</ToolTip>
-          <Default>arg</Default>
-          <Function>
-          </Function>
-        </Literal>
-		<Literal Editable="true">
-          <ID>end</ID>
-          <ToolTip>end</ToolTip>
-          <Default>end</Default>
-          <Function>
-          </Function>
-        </Literal>
+          <ToolTip>Collection</ToolTip>
+          <Default>arg</Default>          
+        </Literal>		
       </Declarations>
       <Code Language="csharp" Delimiter="$"><![CDATA[if($arg$?.Length > 0)
 {

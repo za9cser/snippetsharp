@@ -13,7 +13,7 @@ Simple snippets pack that provides checks for strings and collections. This pack
 |ifcgzb| `if (collection?.Count > 0) { }`|
 |ifcez| `if (collection?.Count is null or 0)`|
 |ifcezb| `if (collection?.Count is null or 0) { }`|
-|iflgz| `if (collection?.Length> 0)`|
+|iflgz| `if (collection?.Length > 0)`|
 |iflgzb| `if (collection?.Length > 0) { }`|
 |iflez| `if (collection?.Length is null or 0)`|
 |iflezb| `if (collection?.Length is null or 0) { }`|

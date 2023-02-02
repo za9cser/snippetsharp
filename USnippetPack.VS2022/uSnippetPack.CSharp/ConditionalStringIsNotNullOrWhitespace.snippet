@@ -4,39 +4,31 @@
     <Header>
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
-      </SnippetTypes>
-      <Title>csnnw</Title>
-      <Author>Sergei Zaitsev
-      </Author>
-      <Description>!string.IsNullOrWhitespace($arg$) ? $true$ : $false$ expression
-      </Description>
-      <HelpUrl>
-      </HelpUrl>
+      </SnippetTypes>      
+      <Title>conditional operator string is not null or whitespace</Title>
+		<Author>Sergei Zaitsev</Author>
+		<Description>
+			conditional operator with condition whether string is not null or whitespace
+		</Description>
       <Shortcut>csnnw</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
-        <Literal Editable="true">
-          <ID>arg</ID>
-          <ToolTip>arg</ToolTip>
-          <Default>arg</Default>
-          <Function>
-          </Function>
-        </Literal>
-        <Literal Editable="true">
-          <ID>true</ID>
-          <ToolTip>true</ToolTip>
-          <Default>true</Default>
-          <Function>
-          </Function>
-        </Literal>
-        <Literal Editable="true">
-          <ID>false</ID>
-          <ToolTip>false</ToolTip>
-          <Default>false</Default>
-          <Function>
-          </Function>
-        </Literal>
+       <Literal Editable="true">
+          <ID>str</ID>
+          <ToolTip>String to evaluate</ToolTip>
+          <Default>str</Default>          
+        </Literal>		
+        <Literal>
+			<ID>false</ID>
+			<ToolTip>False expression</ToolTip>
+			<Default>false</Default>
+		</Literal>
+		<Literal>
+			<ID>true</ID>
+			<ToolTip>True expression</ToolTip>
+			<Default>true</Default>
+		</Literal>
       </Declarations>
       <Code Language="csharp" Delimiter="$"><![CDATA[!string.IsNullOrWhiteSpace($arg$) ? $true$ : $false$]]></Code>
     </Snippet>

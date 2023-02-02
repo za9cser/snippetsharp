@@ -5,38 +5,30 @@
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>clgz</Title>
+      <Title>conditional operator collection has items (length)</Title>
       <Author>Sergei Zaitsev
       </Author>
-      <Description>$arg$?.Length > 0 ? $true$ : $false$ expression
+      <Description>conditional operator with condition whether collection has items (length)
       </Description>
-      <HelpUrl>
-      </HelpUrl>
       <Shortcut>clgz</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
         <Literal Editable="true">
           <ID>arg</ID>
-          <ToolTip>arg</ToolTip>
+          <ToolTip>Collection</ToolTip>
           <Default>arg</Default>
-          <Function>
-          </Function>
-        </Literal>
-        <Literal Editable="true">
-          <ID>true</ID>
-          <ToolTip>true</ToolTip>
-          <Default>true</Default>
-          <Function>
-          </Function>
-        </Literal>
-        <Literal Editable="true">
-          <ID>false</ID>
-          <ToolTip>false</ToolTip>
-          <Default>false</Default>
-          <Function>
-          </Function>
-        </Literal>
+		</Literal>
+        <Literal>
+			<ID>false</ID>
+			<ToolTip>False expression</ToolTip>
+			<Default>false</Default>
+		</Literal>
+		<Literal>
+			<ID>true</ID>
+			<ToolTip>True expression</ToolTip>
+			<Default>true</Default>
+		</Literal>
       </Declarations>
       <Code Language="csharp" Delimiter="$"><![CDATA[$arg$?.Length > 0 ? $true$ : $false$]]></Code>
     </Snippet>
