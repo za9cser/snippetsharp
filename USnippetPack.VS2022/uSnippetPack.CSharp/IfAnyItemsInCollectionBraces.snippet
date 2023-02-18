@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+			<Title>if collection has any items w/ braces
+      </Title>
+			<Author>Sergei Zaitsev
+      </Author>
+			<Description>if statement to check collection has any items w/ braces
+      </Description>
+			<Shortcut>ifany</Shortcut>
+		</Header>
+		<Snippet>
+			<Imports>
+				<Import>
+					<Namespace>System.Linq</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal Editable="true">
+					<ID>collection</ID>
+					<ToolTip>Collection</ToolTip>
+					<Default>collection</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp" Delimiter="$"><![CDATA[if($collection$.Any())
+{
+   $end$
+}]]></Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
