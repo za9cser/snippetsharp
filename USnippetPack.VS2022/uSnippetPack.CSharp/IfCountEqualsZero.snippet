@@ -1,30 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
-  <CodeSnippet Format="1.0.0">
-    <Header>
-      <SnippetTypes>
-        <SnippetType>Expansion</SnippetType>
-      </SnippetTypes>
-      <Title>if collection is null or empty (count)</Title>
-      <Author>Sergei Zaitsev
-      </Author>
-      <Description>
-	  if statement to check collection is null or empty (count)
-      </Description>
-      <HelpUrl>
-      </HelpUrl>
-      <Shortcut>ifcez</Shortcut>
-    </Header>
-    <Snippet>
-      <Declarations>
-         <Literal Editable="true">
-          <ID>arg</ID>
-          <ToolTip>Collection</ToolTip>
-          <Default>arg</Default>
-		</Literal>
-      </Declarations>
-      <Code Language="csharp" Delimiter="$"><![CDATA[if($arg$?.Count is null or 0)
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+			<Title>if collection is null or empty (count)</Title>
+			<Author>Sergei Zaitsev</Author>
+			<Description>if statement to check collection is null or empty (count)</Description>
+			<Shortcut>ifcez</Shortcut>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal Editable="true">
+					<ID>collection</ID>
+					<ToolTip>Collection</ToolTip>
+					<Default>collection</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp" Delimiter="$"><![CDATA[if($collection$?.Count is null or 0)
    $end$]]></Code>
-    </Snippet>
-  </CodeSnippet>
+		</Snippet>
+	</CodeSnippet>
 </CodeSnippets>
