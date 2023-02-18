@@ -5,23 +5,20 @@
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-        <Title>if collection is null or empty (count) w/ braces
-      </Title>
-      <Author>Sergei Zaitsev
-      </Author>
-      <Description>if statement to check collection is null or empty (count) w/ braces
-      </Description>
+        <Title>if collection is null or empty (count) w/ braces</Title>
+      <Author>Sergei Zaitsev</Author>
+      <Description>if statement to check collection is null or empty (count) w/ braces</Description>
       <Shortcut>ifcezb</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
         <Literal Editable="true">
-          <ID>arg</ID>
+          <ID>collection</ID>
           <ToolTip>Collection</ToolTip>
-          <Default>arg</Default>
+          <Default>collection</Default>
 		</Literal>
       </Declarations>
-      <Code Language="csharp" Delimiter="$"><![CDATA[if($arg$?.Count is null or 0)
+      <Code Language="csharp" Delimiter="$"><![CDATA[if($collection$?.Count is null or 0)
 {
    $end$
 }]]></Code>

@@ -5,23 +5,31 @@
 			<SnippetTypes>
 				<SnippetType>Expansion</SnippetType>
 			</SnippetTypes>
-			<Title>if collection is null or empty (length) w/ braces</Title>
+			<Title>if collection all items matсh condition</Title>
 			<Author>Sergei Zaitsev</Author>
-			<Description>if statement to check collection is null or empty (length) w/ braces</Description>
-			<Shortcut>iflezb</Shortcut>
+			<Description>if statement to check collection all items matсh condition</Description>
+			<Shortcut>ifallc</Shortcut>
 		</Header>
 		<Snippet>
+			<Imports>
+				<Import>
+					<Namespace>System.Linq</Namespace>
+				</Import>
+			</Imports>
 			<Declarations>
 				<Literal Editable="true">
 					<ID>collection</ID>
 					<ToolTip>Collection</ToolTip>
 					<Default>collection</Default>
 				</Literal>
+				<Literal Editable="true">
+					<ID>condition</ID>
+					<ToolTip>condition for collection items</ToolTip>
+					<Default>condition</Default>
+				</Literal>
 			</Declarations>
-			<Code Language="csharp" Delimiter="$"><![CDATA[if($collection$?.Count is null or 0)
-{   
-    $end$
-}
+			<Code Language="csharp" Delimiter="$"><![CDATA[if($collection$.All(i => $condition$))
+   $end$
 ]]></Code>
 		</Snippet>
 	</CodeSnippet>

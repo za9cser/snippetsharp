@@ -5,20 +5,30 @@
 			<SnippetTypes>
 				<SnippetType>Expansion</SnippetType>
 			</SnippetTypes>
-			<Title>if collection has items (count) w/ braces</Title>
+			<Title>if collection all items matсh condition w/ braces</Title>
 			<Author>Sergei Zaitsev</Author>
-			<Description>if statement to check collection has items (count) w/ braces</Description>
-			<Shortcut>ifcgzb</Shortcut>
+			<Description>if statement to check collection all items matсh condition w/ braces</Description>
+			<Shortcut>ifallcb</Shortcut>
 		</Header>
 		<Snippet>
+			<Imports>
+				<Import>
+					<Namespace>System.Linq</Namespace>
+				</Import>
+			</Imports>
 			<Declarations>
 				<Literal Editable="true">
 					<ID>collection</ID>
 					<ToolTip>Collection</ToolTip>
 					<Default>collection</Default>
 				</Literal>
+				<Literal Editable="true">
+					<ID>condition</ID>
+					<ToolTip>condition for collection items</ToolTip>
+					<Default>condition</Default>
+				</Literal>
 			</Declarations>
-			<Code Language="csharp" Delimiter="$"><![CDATA[if($collection$?.Count > 0)
+			<Code Language="csharp" Delimiter="$"><![CDATA[if($collection$.All(i => $condition$))
 {
    $end$
 }]]></Code>

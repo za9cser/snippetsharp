@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+			<Title>if collection items matсh condition in Any() method  w/ braces</Title>
+			<Author>Sergei Zaitsev</Author>
+			<Description>if statement to check collection items matсh condition in Any() method w/ braces</Description>
+			<Shortcut>ifanycb</Shortcut>
+		</Header>
+		<Snippet>
+			<Imports>
+				<Import>
+					<Namespace>System.Linq</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal Editable="true">
+					<ID>collection</ID>
+					<ToolTip>Collection</ToolTip>
+					<Default>collection</Default>
+				</Literal>
+				<Literal Editable="true">
+					<ID>condition</ID>
+					<ToolTip>condition for collection items</ToolTip>
+					<Default>condition</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp" Delimiter="$"><![CDATA[if($collection$.Any(i => $condition$))
+{
+   $end$
+}]]></Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

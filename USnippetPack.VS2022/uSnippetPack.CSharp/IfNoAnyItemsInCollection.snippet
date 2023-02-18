@@ -5,12 +5,17 @@
 			<SnippetTypes>
 				<SnippetType>Expansion</SnippetType>
 			</SnippetTypes>
-			<Title>if collection is null or empty (count)</Title>
+			<Title>if collection hasn't any items</Title>
 			<Author>Sergei Zaitsev</Author>
-			<Description>if statement to check collection is null or empty (count)</Description>
-			<Shortcut>ifcez</Shortcut>
+			<Description>if statement to check collection hasn't any items</Description>
+			<Shortcut>ifnany</Shortcut>
 		</Header>
 		<Snippet>
+			<Imports>
+				<Import>
+					<Namespace>System.Linq</Namespace>
+				</Import>
+			</Imports>
 			<Declarations>
 				<Literal Editable="true">
 					<ID>collection</ID>
@@ -18,7 +23,7 @@
 					<Default>collection</Default>
 				</Literal>
 			</Declarations>
-			<Code Language="csharp" Delimiter="$"><![CDATA[if($collection$?.Count is null or 0)
+			<Code Language="csharp" Delimiter="$"><![CDATA[if(!$collection$.Any())
    $end$]]></Code>
 		</Snippet>
 	</CodeSnippet>

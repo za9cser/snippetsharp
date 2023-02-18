@@ -5,19 +5,27 @@
 			<SnippetTypes>
 				<SnippetType>Expansion</SnippetType>
 			</SnippetTypes>
-			<Title>conditional operator collection has items (count)</Title>
-			<Author>Sergei Zaitsev
-      </Author>
-			<Description>conditional operator with condition whether collection has items (count)
-      </Description>
-			<Shortcut>ccgz</Shortcut>
+			<Title>conditional operator collection any items don't matсh condition</Title>
+			<Author>Sergei Zaitsev</Author>
+			<Description>conditional operator with condition whether collection any items don't matсh condition</Description>
+			<Shortcut>cnanyc</Shortcut>
 		</Header>
 		<Snippet>
+			<Imports>
+				<Import>
+					<Namespace>System.Linq</Namespace>
+				</Import>
+			</Imports>
 			<Declarations>
 				<Literal Editable="true">
 					<ID>collection</ID>
 					<ToolTip>Collection</ToolTip>
 					<Default>collection</Default>
+				</Literal>
+				<Literal Editable="true">
+					<ID>condition</ID>
+					<ToolTip>condition for collection items</ToolTip>
+					<Default>condition</Default>
 				</Literal>
 				<Literal>
 					<ID>false</ID>
@@ -30,7 +38,7 @@
 					<Default>true</Default>
 				</Literal>
 			</Declarations>
-			<Code Language="csharp" Delimiter="$"><![CDATA[$collection$?.Count > 0 ? $true$ : $false$]]></Code>
+			<Code Language="csharp" Delimiter="$"><![CDATA[!$collection$.Any(i => $condition$) ? $true$ : $false$]]></Code>
 		</Snippet>
 	</CodeSnippet>
 </CodeSnippets>
