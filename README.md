@@ -21,15 +21,15 @@ Simple snippets pack that provides checks for strings and collections. This pack
 | ifany    | `if (collection.Any())`                            |
 | ifanyc   | `if (collection.Any(i => <condition>))`            |
 | ifanyb   | `if (collection.Any()) {}`                         |
-| ifanycb  | `if (collection.Any(i => <condition>)) {}`         |
+| ifanycb  | `if (collection.Any(i => <condition>)) { }`        |
 | ifnany   | `if (!collection.Any())`                           |
 | ifnanyc  | `if (!collection.Any(i => <condition>))`           |
 | ifnanyb  | `if (!collection.Any()) {}`                        |
-| ifnanycb | `if (!collection.Any(i => <condition>)) {}`        |
+| ifnanycb | `if (!collection.Any(i => <condition>)) { }`       |
 | ifall    | `if (collection.All(i => <condition>))`            |
-| ifallb   | `if (collection.All(i => <condition>)) {}`         |
+| ifallb   | `if (collection.All(i => <condition>)) { }`        |
 | ifnall   | `if (!collection.All(i => <condition>))`           |
-| ifnallb  | `if (!collection.All(i => <condition>)) {}`        |
+| ifnallb  | `if (!collection.All(i => <condition>)) { }`       |
 | cany     | `collection.Any() ? true : false`                  |
 | canyc    | `collection.Any(i => <condition>) ? true : false`  |
 | cnany    | `!collection.Any() ? true : false`                 |
