@@ -1,7 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
+﻿using Newtonsoft.Json;
 using System.Text.RegularExpressions;
 using System.Xml.Linq;
 using USnippetPack.SnippetsConvertor;
