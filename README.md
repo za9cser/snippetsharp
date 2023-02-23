@@ -9,10 +9,10 @@ Simple snippets pack that provides checks for strings and collections. This pack
 | -------- | ------------------------------------------------ |
 | ifsnw    | `if (string.IsNullOrWhiteSpace(str))`            |
 | ifsnwb   | `if (string.IsNullOrWhiteSpace(str)) {  }`       |
-| ifsnnw   | `if (!string.IsNullOrWhiteSpace(str))`           |
-| ifsnnwb  | `if (!string.IsNullOrWhiteSpace(str)) {  }`      |
+| ifxsnw   | `if (!string.IsNullOrWhiteSpace(str))`           |
+| ifxsnwb  | `if (!string.IsNullOrWhiteSpace(str)) {  }`      |
 | csnw     | `string.IsNullOrWhiteSpace(str) ? true : false`  |
-| csnnw    | `!string.IsNullOrWhiteSpace(str) ? true : false` |
+| cxsnw    | `!string.IsNullOrWhiteSpace(str) ? true : false` |
 
 
 ## Collection check snippets using Linq methods
@@ -22,20 +22,20 @@ Simple snippets pack that provides checks for strings and collections. This pack
 | ifanyc   | `if (collection.Any(i => <condition>))`            |
 | ifanyb   | `if (collection.Any()) {}`                         |
 | ifanycb  | `if (collection.Any(i => <condition>)) { }`        |
-| ifnany   | `if (!collection.Any())`                           |
-| ifnanyc  | `if (!collection.Any(i => <condition>))`           |
-| ifnanyb  | `if (!collection.Any()) {}`                        |
-| ifnanycb | `if (!collection.Any(i => <condition>)) { }`       |
+| ifxany   | `if (!collection.Any())`                           |
+| ifxanyc  | `if (!collection.Any(i => <condition>))`           |
+| ifxanyb  | `if (!collection.Any()) {}`                        |
+| ifxanycb | `if (!collection.Any(i => <condition>)) { }`       |
 | ifall    | `if (collection.All(i => <condition>))`            |
 | ifallb   | `if (collection.All(i => <condition>)) { }`        |
-| ifnall   | `if (!collection.All(i => <condition>))`           |
-| ifnallb  | `if (!collection.All(i => <condition>)) { }`       |
+| ifxall   | `if (!collection.All(i => <condition>))`           |
+| ifxallb  | `if (!collection.All(i => <condition>)) { }`       |
 | cany     | `collection.Any() ? true : false`                  |
 | canyc    | `collection.Any(i => <condition>) ? true : false`  |
-| cnany    | `!collection.Any() ? true : false`                 |
-| cnanyc   | `!collection.Any(i => <condition>) ? true : false` |
+| cxany    | `!collection.Any() ? true : false`                 |
+| cxanyc   | `!collection.Any(i => <condition>) ? true : false` |
 | call     | `collection.All(i => <condition>) ? true : false`  |
-| cnall    | `!collection.All(i => <condition>) ? true : false` |
+| cxall    | `!collection.All(i => <condition>) ? true : false` |
 
 ## Collection check snippets by Length and Count properties with null check
 
