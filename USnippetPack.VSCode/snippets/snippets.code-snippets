@@ -1,0 +1,343 @@
+{
+  "conditional operator collection all items matсh condition": {
+    "scope": "csharp",
+    "prefix": "call",
+    "description": "conditional operator with condition whether collection all items matсh condition",
+    "body": [
+      "${1:collection}.All(i => ${2:condition}) ? ${3:true} : ${4:false}"
+    ]
+  },
+  "conditional operator collection has items": {
+    "scope": "csharp",
+    "prefix": "cany",
+    "description": "conditional operator with condition whether collection has items",
+    "body": [
+      "${1:collection}.Any() ? ${2:true} : ${3:false}"
+    ]
+  },
+  "conditional operator collection any items matсh condition": {
+    "scope": "csharp",
+    "prefix": "canyc",
+    "description": "conditional operator with condition whether collection any items matсh condition",
+    "body": [
+      "${1:collection}.Any(i => ${2:condition}) ? ${3:true} : ${4:false}"
+    ]
+  },
+  "conditional operator collection is null or empty (count)": {
+    "scope": "csharp",
+    "prefix": "ccez",
+    "description": "conditional operator with condition whether collection is null or empty (count)",
+    "body": [
+      "${1:collection}?.Count is null or 0 ? ${2:true} : ${3:false}"
+    ]
+  },
+  "conditional operator collection has items (count)": {
+    "scope": "csharp",
+    "prefix": "ccgz",
+    "description": "conditional operator with condition whether collection has items (count)",
+    "body": [
+      "${1:collection}?.Count > 0 ? ${2:true} : ${3:false}"
+    ]
+  },
+  "conditional operator  collection is null or empty (length)": {
+    "scope": "csharp",
+    "prefix": "clez",
+    "description": "conditional operator with condition whether collection is null or empty (length)",
+    "body": [
+      "${1:collection}?.Length is null or 0 ? ${2:true} : ${3:false}"
+    ]
+  },
+  "conditional operator collection has items (length)": {
+    "scope": "csharp",
+    "prefix": "clgz",
+    "description": "conditional operator with condition whether collection has items (length)",
+    "body": [
+      "${1:collection}?.Length > 0 ? ${2:true} : ${3:false}"
+    ]
+  },
+  "conditional operator collection hasn't items": {
+    "scope": "csharp",
+    "prefix": "cxany",
+    "description": "conditional operator with condition whether collection hasn't items",
+    "body": [
+      "!${1:collection}.Any() ? ${2:true} : ${3:false}"
+    ]
+  },
+  "conditional operator collection any items don't matсh condition": {
+    "scope": "csharp",
+    "prefix": "cxanyc",
+    "description": "conditional operator with condition whether collection any items don't matсh condition",
+    "body": [
+      "!${1:collection}.Any(i => ${2:condition}) ? ${3:true} : ${4:false}"
+    ]
+  },
+  "conditional operator collection all items don't matсh condition": {
+    "scope": "csharp",
+    "prefix": "cxall",
+    "description": "conditional operator with condition whether collection all items don't matсh condition",
+    "body": [
+      "!${1:collection}.All(i => ${2:condition}) ? ${3:true} : ${4:false}"
+    ]
+  },
+  "conditional operator string is not null or whitespace": {
+    "scope": "csharp",
+    "prefix": "cxsnw",
+    "description": "conditional operator with condition whether string is not null or whitespace",
+    "body": [
+      "!string.IsNullOrWhiteSpace(${1:str}) ? ${2:true} : ${3:false}"
+    ]
+  },
+  "conditional operator string is null or whitespace": {
+    "scope": "csharp",
+    "prefix": "csnw",
+    "description": "conditional operator with condition whether string is null or whitespace",
+    "body": [
+      "string.IsNullOrWhiteSpace(${1:str}) ? ${2:true} : ${3:false}"
+    ]
+  },
+  "if collection all items matсh condition": {
+    "scope": "csharp",
+    "prefix": "ifallc",
+    "description": "if statement to check collection all items matсh condition",
+    "body": [
+      "if(${1:collection}.All(i => ${2:condition}))",
+      "   ${3:end}",
+      ""
+    ]
+  },
+  "if collection all items matсh condition w/ braces": {
+    "scope": "csharp",
+    "prefix": "ifallcb",
+    "description": "if statement to check collection all items matсh condition w/ braces",
+    "body": [
+      "if(${1:collection}.All(i => ${2:condition}))",
+      "{",
+      "   ${3:end}",
+      "}"
+    ]
+  },
+  "if collection has any items": {
+    "scope": "csharp",
+    "prefix": "ifany",
+    "description": "if statement to check collection has any items",
+    "body": [
+      "if(${1:collection}.Any())",
+      "   ${2:end}"
+    ]
+  },
+  "if collection has any items w/ braces": {
+    "scope": "csharp",
+    "prefix": "ifanyb",
+    "description": "if statement to check collection has any items w/ braces",
+    "body": [
+      "if(${1:collection}.Any())",
+      "{",
+      "   ${2:end}",
+      "}"
+    ]
+  },
+  "if collection items matсh condition in Any() method": {
+    "scope": "csharp",
+    "prefix": "ifanyc",
+    "description": "if statement to check collection items matсh condition in Any() method",
+    "body": [
+      "if(${1:collection}.Any(i => ${2:condition}))",
+      "   ${3:end}",
+      ""
+    ]
+  },
+  "if collection items matсh condition in Any() method  w/ braces": {
+    "scope": "csharp",
+    "prefix": "ifanycb",
+    "description": "if statement to check collection items matсh condition in Any() method w/ braces",
+    "body": [
+      "if(${1:collection}.Any(i => ${2:condition}))",
+      "{",
+      "   ${3:end}",
+      "}"
+    ]
+  },
+  "if collection is null or empty (count)": {
+    "scope": "csharp",
+    "prefix": "ifcez",
+    "description": "if statement to check collection is null or empty (count)",
+    "body": [
+      "if(${1:collection}?.Count is null or 0)",
+      "   ${2:end}"
+    ]
+  },
+  "if collection is null or empty (count) w/ braces": {
+    "scope": "csharp",
+    "prefix": "ifcezb",
+    "description": "if statement to check collection is null or empty (count) w/ braces",
+    "body": [
+      "if(${1:collection}?.Count is null or 0)",
+      "{",
+      "   ${2:end}",
+      "}"
+    ]
+  },
+  "if collection has items (count)": {
+    "scope": "csharp",
+    "prefix": "ifcgz",
+    "description": "if statement to check collection has items (count)",
+    "body": [
+      "if(${1:collection}?.Count > 0)",
+      "   ${2:end}"
+    ]
+  },
+  "if collection has items (count) w/ braces": {
+    "scope": "csharp",
+    "prefix": "ifcgzb",
+    "description": "if statement to check collection has items (count) w/ braces",
+    "body": [
+      "if(${1:collection}?.Count > 0)",
+      "{",
+      "   ${2:end}",
+      "}"
+    ]
+  },
+  "if collection is null or empty (length)": {
+    "scope": "csharp",
+    "prefix": "iflez",
+    "description": "if statement to check collection is null or empty (length)",
+    "body": [
+      "if(${1:collection}?.Length is null or 0)",
+      "   ${2:end}"
+    ]
+  },
+  "if collection is null or empty (length) w/ braces": {
+    "scope": "csharp",
+    "prefix": "iflezb",
+    "description": "if statement to check collection is null or empty (length) w/ braces",
+    "body": [
+      "if(${1:collection}?.Count is null or 0)",
+      "{   ",
+      "    ${2:end}",
+      "}",
+      ""
+    ]
+  },
+  "if collection has items (length)": {
+    "scope": "csharp",
+    "prefix": "iflgz",
+    "description": "if statement to check collection has items (length)",
+    "body": [
+      "if(${1:collection}?.Length > 0)",
+      "   ${2:end}"
+    ]
+  },
+  "if collection has items (length) w/ braces": {
+    "scope": "csharp",
+    "prefix": "iflgzb",
+    "description": "if statement to check collection has items (length) w/ braces",
+    "body": [
+      "if(${1:collection}?.Length > 0)",
+      "{",
+      "   ${2:end}",
+      "}"
+    ]
+  },
+  "if collection hasn't any items": {
+    "scope": "csharp",
+    "prefix": "ifxany",
+    "description": "if statement to check collection hasn't any items",
+    "body": [
+      "if(!${1:collection}.Any())",
+      "   ${2:end}"
+    ]
+  },
+  "if collection hasn't any items w/ braces": {
+    "scope": "csharp",
+    "prefix": "ifxanyb",
+    "description": "if statement to check collection hasn't any items w/ braces",
+    "body": [
+      "if(!${1:collection}.Any())",
+      "{",
+      "   ${2:end}",
+      "}"
+    ]
+  },
+  "if collection items dont't matсh condition in Any() method": {
+    "scope": "csharp",
+    "prefix": "ifxanyc",
+    "description": "if statement to check collection items don't matсh condition in Any() method",
+    "body": [
+      "if(!${1:collection}.Any(i => ${2:condition}))",
+      "   ${3:end}",
+      ""
+    ]
+  },
+  "if collection items dont't matсh condition in Any() method  w/ braces": {
+    "scope": "csharp",
+    "prefix": "ifxanycb",
+    "description": "if statement to check collection items don't matсh condition in Any() method w/ braces",
+    "body": [
+      "if(!${1:collection}.Any(i => ${2:condition}))",
+      "{",
+      "   ${3:end}",
+      "}"
+    ]
+  },
+  "if collection all items don't matсh condition": {
+    "scope": "csharp",
+    "prefix": "ifxall",
+    "description": "if statement to check collection all items don't matсh condition",
+    "body": [
+      "if(!${1:collection}.All(i => ${2:condition}))",
+      "   ${3:end}",
+      ""
+    ]
+  },
+  "if collection all items dont't matсh condition w/ braces": {
+    "scope": "csharp",
+    "prefix": "ifxallcb",
+    "description": "if statement to check collection all items don't matсh condition w/ braces",
+    "body": [
+      "if(!${1:collection}.All(i => ${2:condition}))",
+      "{",
+      "   ${3:end}",
+      "}"
+    ]
+  },
+  "if string is not not null or whitespace": {
+    "scope": "csharp",
+    "prefix": "ifxsnw",
+    "description": "if statement string is not not null or whitespace",
+    "body": [
+      "if(!string.IsNullOrWhiteSpace(${1:str}))",
+      "   ${2:end}"
+    ]
+  },
+  "if string is not null or whitespace w/ braces": {
+    "scope": "csharp",
+    "prefix": "ifxsnwb",
+    "description": "if statement to check string is not null or whitespace w/ braces",
+    "body": [
+      "if(!string.IsNullOrWhiteSpace(${1:str}))",
+      "{",
+      "    ${2:end}",
+      "}"
+    ]
+  },
+  "if string is not null or whitespace": {
+    "scope": "csharp",
+    "prefix": "ifsnw",
+    "description": "if statement to check string is not null or whitespace",
+    "body": [
+      "if(string.IsNullOrWhiteSpace(${1:str}))",
+      "   ${2:end}"
+    ]
+  },
+  "if string is null or whitespace w/ braces": {
+    "scope": "csharp",
+    "prefix": "ifsnwb",
+    "description": "if statement to check string is null or whitespace w/ braces",
+    "body": [
+      "if(string.IsNullOrWhiteSpace(${1:str}))",
+      "{",
+      "    ${2:end}",
+      "}"
+    ]
+  }
+}
