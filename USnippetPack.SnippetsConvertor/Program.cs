@@ -22,6 +22,39 @@ foreach (var file in fileNames)
     Console.WriteLine(description);
     Console.WriteLine(shortcut);
     Console.WriteLine(code);
+
+    var parts = code.Split("\n");
+    var dollarCount = 0;
+    var literalCount = 0;
+    for (int i = 0; i < parts.Length; i++)
+    {
+        var part = parts[i];
+        while (true)
+        {
+            var dollarIndex = part.IndexOf('$');
+            if (dollarIndex < 0) break;
+
+            if (dollarCount % 2 == 0)
+            {
+                part = part.Remove(dollarIndex, 1);
+                part = part.Insert(dollarIndex, $"{{{++literalCount}:");
+            }
+            else
+            {
+                part = part[..dollarIndex] + "}" + part[(dollarIndex + 1)..];
+            }
+
+            dollarCount++;
+        }
+
+        parts[i] = part;
+    }
+
+    foreach (var part in parts)
+    {
+        Console.WriteLine(part);
+    }
+
     Console.WriteLine("==============================\n\n");
 }
 
