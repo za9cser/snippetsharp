@@ -1,65 +1,55 @@
-# usnippetpackvscode README
+# uSnippetPack
+Simple snippets pack that provides checks for strings and collections. This pack inspired by [Snippetica](https://github.com/JosefPihrt/Snippetica). I do recommend use uSnippetPack with Snippetica
 
-This is the README for your extension "usnippetpackvscode". After writing up a brief description, we recommend including the following sections.
+# Available snippets
 
-## Features
+## String check snippets
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+| Shortcut | Generated Code                                   |
+| -------- | ------------------------------------------------ |
+| ifsnw    | `if (string.IsNullOrWhiteSpace(str))`            |
+| ifsnwb   | `if (string.IsNullOrWhiteSpace(str)) {  }`       |
+| ifxsnw   | `if (!string.IsNullOrWhiteSpace(str))`           |
+| ifxsnwb  | `if (!string.IsNullOrWhiteSpace(str)) {  }`      |
+| csnw     | `string.IsNullOrWhiteSpace(str) ? true : false`  |
+| cxsnw    | `!string.IsNullOrWhiteSpace(str) ? true : false` |
 
-For example if there is an image subfolder under your extension project workspace:
 
-\!\[feature X\]\(images/feature-x.png\)
+## Collection check snippets using Linq methods
+| Shortcut | Generated Code                                     |
+| -------- | -------------------------------------------------- |
+| ifany    | `if (collection.Any())`                            |
+| ifanyc   | `if (collection.Any(i => <condition>))`            |
+| ifanyb   | `if (collection.Any()) {}`                         |
+| ifanycb  | `if (collection.Any(i => <condition>)) { }`        |
+| ifxany   | `if (!collection.Any())`                           |
+| ifxanyc  | `if (!collection.Any(i => <condition>))`           |
+| ifxanyb  | `if (!collection.Any()) {}`                        |
+| ifxanycb | `if (!collection.Any(i => <condition>)) { }`       |
+| ifall    | `if (collection.All(i => <condition>))`            |
+| ifallb   | `if (collection.All(i => <condition>)) { }`        |
+| ifxall   | `if (!collection.All(i => <condition>))`           |
+| ifxallb  | `if (!collection.All(i => <condition>)) { }`       |
+| cany     | `collection.Any() ? true : false`                  |
+| canyc    | `collection.Any(i => <condition>) ? true : false`  |
+| cxany    | `!collection.Any() ? true : false`                 |
+| cxanyc   | `!collection.Any(i => <condition>) ? true : false` |
+| call     | `collection.All(i => <condition>) ? true : false`  |
+| cxall    | `!collection.All(i => <condition>) ? true : false` |
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## Collection check snippets by Length and Count properties with null check
 
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+| Shortcut | Generated Code                                   |
+| -------- | ------------------------------------------------ |
+| ifcgz    | `if (collection?.Count > 0)`                     |
+| ifcgzb   | `if (collection?.Count > 0) { }`                 |
+| ifcez    | `if (collection?.Count is null or 0)`            |
+| ifcezb   | `if (collection?.Count is null or 0) { }`        |
+| iflgz    | `if (collection?.Length > 0)`                    |
+| iflgzb   | `if (collection?.Length > 0) { }`                |
+| iflez    | `if (collection?.Length is null or 0)`           |
+| iflezb   | `if (collection?.Length is null or 0) { }`       |
+| ccgz     | `collection?.Count > 0 ? true : false`           |
+| ccez     | `collection?.Count is null or 0 ? true : false`  |
+| clgz     | `collection?.Length > 0 ? true : false`          |
+| clez     | `collection?.Length is null or 0 ? true : false` |

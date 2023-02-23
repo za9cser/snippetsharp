@@ -2,7 +2,8 @@
   "name": "usnippetpackvscode",
   "displayName": "uSnippetPack",
   "description": "Simple c# snippet pack",
-  "version": "0.0.1",
+  "version": "2.0.2",  
+  "icon": "logo-color.png",
   "engines": {
     "vscode": "^1.75.0"
   },
@@ -16,5 +17,10 @@
         "path": "./snippets/snippets.code-snippets"
       }
     ]
+  },
+  "publisher": "za9cser",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/za9cser"
   }
 }
