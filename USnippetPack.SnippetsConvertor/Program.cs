@@ -2,6 +2,7 @@
 
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using System.Text.RegularExpressions;
 using System.Xml.Linq;
 using USnippetPack.SnippetsConvertor;
 
@@ -10,6 +11,7 @@ Console.WriteLine("Start Convertion");
 var path = "../../../../USnippetPack.VS2022/uSnippetPack.CSharp";
 var fileNames = Directory.GetFiles(path);
 var snippets = new Dictionary<string, VSCodeSnippet>(fileNames.Length);
+var regex = new Regex(@"\$\w+\$", RegexOptions.Multiline);
 foreach (var file in fileNames)
 {
     var vsSnippetString = File.ReadAllText(file);
@@ -26,27 +28,17 @@ foreach (var file in fileNames)
     Console.WriteLine(code);
 
     var parts = code.Split("\n");
-    var dollarCount = 0;
     var literalCount = 0;
     for (int i = 0; i < parts.Length; i++)
     {
         var part = parts[i];
-        while (true)
+        var match = regex.Matches(part);
+
+        foreach (Group group in match)
         {
-            var dollarIndex = part.IndexOf('$');
-            if (dollarIndex < 0) break;
-
-            if (dollarCount % 2 == 0)
-            {
-                part = part.Remove(dollarIndex, 1);
-                part = part.Insert(dollarIndex, $"{{{++literalCount}:");
-            }
-            else
-            {
-                part = part[..dollarIndex] + "}" + part[(dollarIndex + 1)..];
-            }
-
-            dollarCount++;
+            var newPart = group.Value;
+            newPart = $"${{{++literalCount}:{group.Value[1..^1]}}}";
+            part = part.Replace(group.Value, newPart);
         }
 
         parts[i] = part;
