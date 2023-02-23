@@ -1,13 +1,15 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.Xml.Linq;
+using USnippetPack.SnippetsConvertor;
 
 Console.WriteLine("Start Convertion");
 
 var path = "../../../../USnippetPack.VS2022/uSnippetPack.CSharp";
 var fileNames = Directory.GetFiles(path);
-var vscodeSnippetObject = new JObject();
+var snippets = new Dictionary<string, VSCodeSnippet>(fileNames.Length);
 foreach (var file in fileNames)
 {
     var vsSnippetString = File.ReadAllText(file);
@@ -56,6 +58,18 @@ foreach (var file in fileNames)
     }
 
     Console.WriteLine("==============================\n\n");
+
+    var snippet = new VSCodeSnippet(shortcut, description, parts);
+    snippets.Add(title, snippet);
 }
+
+var outputString = JsonConvert.SerializeObject(snippets, Formatting.Indented);
+Console.WriteLine(outputString);
+
+using (var _ = File.Create("csharp.code-snippets"))
+{
+}
+
+File.WriteAllText("csharp.code-snippets", outputString);
 
 Console.ReadKey();
