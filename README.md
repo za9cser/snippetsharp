@@ -1,5 +1,6 @@
 # uSnippetPack
 Simple snippets pack that provides checks for strings and collections. This pack inspired by [Snippetica](https://github.com/JosefPihrt/Snippetica). I do recommend use uSnippetPack with Snippetica.  
+
 uSnippetPack available for [vs code](https://marketplace.visualstudio.com/items?itemName=za9cser.usnippetpackvscode) and [Visual Studio 2022](https://marketplace.visualstudio.com/items?itemName=za9cser.usnippetpack2022)
 
 # Available snippets
