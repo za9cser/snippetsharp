@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Id="uSnippetPack.cd839adc-ef78-496a-a991-22769f2f4cd1" Version="2.0" Language="en-US" Publisher="Sergei Zaitsev"/>
+    <Identity Id="uSnippetPack.cd839adc-ef78-496a-a991-22769f2f4cd1" Version="2.0.1" Language="en-US" Publisher="Sergei Zaitsev"/>
     <DisplayName>uSnippetPack</DisplayName>
     <Description xml:space="preserve">Simple c# snippet pack for Visual Studio 2022</Description>
     <MoreInfo>https://github.com/za9cser</MoreInfo>
