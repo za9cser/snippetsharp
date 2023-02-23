@@ -5,17 +5,17 @@ using System.Xml.Linq;
 
 Console.WriteLine("Start Convertion");
 
-var path = "../USnippetPack.VS2022/uSnippetPack.CSharp";
+var path = "../../../../USnippetPack.VS2022/uSnippetPack.CSharp";
 var fileNames = Directory.GetFiles(path);
 var vscodeSnippetObject = new JObject();
 foreach (var file in fileNames)
 {
     var vsSnippetString = File.ReadAllText(file);
-    var vsSnippet = XDocument.Load(vsSnippetString);
+    var vsSnippet = XDocument.Parse(vsSnippetString);
 
-    var title = vsSnippet.Descendants("Title").FirstOrDefault()?.Value;
-    var shortcut = vsSnippet.Descendants("Shortcut").FirstOrDefault()?.Value;
-    var description = vsSnippet.Descendants("Description").FirstOrDefault()?.Value.Trim();
+    var title = vsSnippet.Descendants().FirstOrDefault(x => x.Name.LocalName == "Title")?.Value;
+    var shortcut = vsSnippet.Descendants().FirstOrDefault(x => x.Name.LocalName == "Shortcut")?.Value;
+    var description = vsSnippet.Descendants().FirstOrDefault(x => x.Name.LocalName == "Description")?.Value.Trim();
     var code = vsSnippet.DescendantNodes().OfType<XCData>().FirstOrDefault()?.Value;
 
     Console.WriteLine(title);
@@ -24,3 +24,5 @@ foreach (var file in fileNames)
     Console.WriteLine(code);
     Console.WriteLine("==============================\n\n");
 }
+
+Console.ReadKey();
