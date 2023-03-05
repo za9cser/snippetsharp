@@ -5,7 +5,7 @@ Simple c# and js snippets pack that provides checks for strings and collections.
 
 
 ## Javascript
-Now It's only snippets for bootstrap classes `justify-content`
+Now It's snippets only for bootstrap classes `justify-content`
 | Shortcut | Generated Code            |
 | -------- | ------------------------- |
 | jcs      | `justify-content-start`   |
