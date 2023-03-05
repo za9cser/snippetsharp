@@ -1,0 +1,42 @@
+{
+  "bootstrap justify-content-start class": {
+    "scope": "javascript,reactjavascript,html,typescript,reacttypescript",
+    "prefix": "jcs",
+    "description": "bootstrap justify-content-start class",
+    "body": [
+      "justify-content-start"
+    ]
+  },
+  "bootstrap justify-content-center class": {
+    "scope": "javascript,reactjavascript,html,typescript,reacttypescript",
+    "prefix": "jcc",
+    "description": "bootstrap justify-content-center class",
+    "body": [
+      "justify-content-center"
+    ]
+  },
+  "bootstrap justify-content-end class": {
+    "scope": "javascript,reactjavascript,html,typescript,reacttypescript",
+    "prefix": "jce",
+    "description": "bootstrap justify-content-end class",
+    "body": [
+      "justify-content-end"
+    ]
+  },
+  "bootstrap justify-content-between class": {
+    "scope": "javascript,reactjavascript,html,typescript,reacttypescript",
+    "prefix": "jcb",
+    "description": "bootstrap justify-content-between class",
+    "body": [
+      "justify-content-between"
+    ]
+  },
+  "bootstrap justify-content-around class": {
+    "scope": "javascript,reactjavascript,html,typescript,reacttypescript",
+    "prefix": "jca",
+    "description": "bootstrap justify-content-around class",
+    "body": [
+      "justify-content-around"
+    ]
+  },
+}

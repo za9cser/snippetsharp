@@ -2,7 +2,7 @@
   "name": "usnippetpackvscode",
   "displayName": "uSnippetPack",
   "description": "Simple c# snippet pack",
-  "version": "2.0.3",  
+  "version": "3.0.0",  
   "icon": "logo-color.png",
   "engines": {
     "vscode": "^1.70.0"
@@ -14,13 +14,17 @@
     "snippets": [
       {
         "language": "csharp",
-        "path": "./snippets/snippets.code-snippets"
+        "path": "./snippets/csharp.code-snippets"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/js.code-snippets"
       }
     ]
   },
   "publisher": "za9cser",
   "repository": {
     "type": "git",
-    "url": "https://github.com/za9cser"
+    "url": "https://github.com/za9cser/usnippetpack"
   }
 }
