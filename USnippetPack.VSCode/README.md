@@ -1,9 +1,23 @@
 # uSnippetPack
-Simple snippets pack that provides checks for strings and collections. This pack inspired by [Snippetica](https://github.com/JosefPihrt/Snippetica). I do recommend use uSnippetPack with Snippetica
+Simple c# and js snippets pack that provides checks for strings and collections. This pack inspired by [Snippetica](https://github.com/JosefPihrt/Snippetica). I do recommend use uSnippetPack with Snippetica
 
 # Available snippets
 
-## String check snippets
+
+## Javascript
+Now It's snippets only for bootstrap classes `justify-content`
+| Shortcut | Generated Code            |
+| -------- | ------------------------- |
+| jcs      | `justify-content-start`   |
+| jcc      | `justify-content-start`   |
+| jce      | `justify-content-center`  |
+| jcb      | `justify-content-between` |
+| jca      | `justify-content-around`  |
+
+
+## C#
+
+### String check snippets
 
 | Shortcut | Generated Code                                   |
 | -------- | ------------------------------------------------ |
@@ -15,7 +29,7 @@ Simple snippets pack that provides checks for strings and collections. This pack
 | cxsnw    | `!string.IsNullOrWhiteSpace(str) ? true : false` |
 
 
-## Collection check snippets using Linq methods
+### Collection check snippets using Linq methods
 | Shortcut | Generated Code                                     |
 | -------- | -------------------------------------------------- |
 | ifany    | `if (collection.Any())`                            |
@@ -37,7 +51,7 @@ Simple snippets pack that provides checks for strings and collections. This pack
 | call     | `collection.All(i => <condition>) ? true : false`  |
 | cxall    | `!collection.All(i => <condition>) ? true : false` |
 
-## Collection check snippets by Length and Count properties with null check
+### Collection check snippets by Length and Count properties with null check
 
 | Shortcut | Generated Code                                   |
 | -------- | ------------------------------------------------ |

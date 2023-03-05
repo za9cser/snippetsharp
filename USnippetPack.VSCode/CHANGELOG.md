@@ -1,4 +1,10 @@
 # Change Log
-## [Unreleased]
 
-- Initial release
+## 3.0
+- added js snippets for `justify-content` bootstrap css classes
+## 2.0.3
+- fixes to snippet descriptions
+- minimal required vscode version downgraded to v1.70
+## 2.0
+
+- csharp checks for strings and collection
