@@ -10,8 +10,8 @@ Now It's only snippets for bootstrap classes `justify-content`
 | Shortcut | Generated Code            |
 | -------- | ------------------------- |
 | jcs      | `justify-content-start`   |
-| jcc      | `justify-content-start`   |
-| jce      | `justify-content-center`  |
+| jcc      | `justify-content-center`   |
+| jce      | `justify-content-end`  |
 | jcb      | `justify-content-between` |
 | jca      | `justify-content-around`  |
 
