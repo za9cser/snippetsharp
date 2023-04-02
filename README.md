@@ -5,17 +5,6 @@ uSnippetPack is available for [vs code](https://marketplace.visualstudio.com/ite
 
 # Available snippets
 
-## Javascript
-Now It's only snippets for bootstrap classes `justify-content`
-| Shortcut | Generated Code            |
-| -------- | ------------------------- |
-| jcs      | `justify-content-start`   |
-| jcc      | `justify-content-center`   |
-| jce      | `justify-content-end`  |
-| jcb      | `justify-content-between` |
-| jca      | `justify-content-around`  |
-
-
 ## C#
 
 ### String check snippets
@@ -68,3 +57,13 @@ Now It's only snippets for bootstrap classes `justify-content`
 | ccez     | `collection?.Count is null or 0 ? true : false`  |
 | clgz     | `collection?.Length > 0 ? true : false`          |
 | clez     | `collection?.Length is null or 0 ? true : false` |
+
+## Javascript
+Now It's only snippets for bootstrap classes `justify-content`
+| Shortcut | Generated Code            |
+| -------- | ------------------------- |
+| jcs      | `justify-content-start`   |
+| jcc      | `justify-content-center`   |
+| jce      | `justify-content-end`  |
+| jcb      | `justify-content-between` |
+| jca      | `justify-content-around`  |
