@@ -2,7 +2,7 @@
   "name": "usnippetpackvscode",
   "displayName": "uSnippetPack",
   "description": "Simple c# snippet pack",
-  "version": "3.0.1",  
+  "version": "3.1.0",  
   "icon": "logo-color.png",
   "engines": {
     "vscode": "^1.70.0"
