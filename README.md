@@ -59,11 +59,19 @@ uSnippetPack is available for [vs code](https://marketplace.visualstudio.com/ite
 | clez     | `collection?.Length is null or 0 ? true : false` |
 
 ## Javascript
-Now It's only snippets for bootstrap classes `justify-content`
+There are snippets for bootstrap classes `justify-content`, `align-items`, `align-self`  
 | Shortcut | Generated Code            |
 | -------- | ------------------------- |
 | jcs      | `justify-content-start`   |
-| jcc      | `justify-content-center`   |
-| jce      | `justify-content-end`  |
+| jcc      | `justify-content-center`  |
+| jce      | `justify-content-end`     |
 | jcb      | `justify-content-between` |
 | jca      | `justify-content-around`  |
+| ais      | `align-items-start`       |
+| aic      | `align-items-center`      |
+| aie      | `align-items-end`         |
+| aisch    | `align-items-stretch`     |
+| ass      | `align-self-start`        |
+| asc      | `align-self-center`       |
+| ase      | `align-self-end`          |
+| assch    | `align-self-stretch`      |

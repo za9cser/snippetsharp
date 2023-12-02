@@ -23,5 +23,45 @@
         "prefix": "jca",
         "description": "bootstrap justify-content-around class",
         "body": ["justify-content-around"]
+    },
+    "bootstrap align-items-center class": {
+        "prefix": "aic",
+        "description": "bootstrap align-items-center class",
+        "body": ["align-items-center"]
+    },
+    "bootstrap align-items-start class": {
+        "prefix": "ais",
+        "description": "bootstrap align-items-start class",
+        "body": ["align-items-start"]
+    },
+    "bootstrap align-items-end class": {
+        "prefix": "aie",
+        "description": "bootstrap align-items-end class",
+        "body": ["align-items-end"]
+    },
+    "bootstrap align-items-stretch class": {
+        "prefix": "aisch",
+        "description": "bootstrap align-items-stretch class",
+        "body": ["align-items-stretch"]
+    },
+    "bootstrap align-self-center class": {
+        "prefix": "asc",
+        "description": "bootstrap align-self-center class",
+        "body": ["align-self-center"]
+    },
+    "bootstrap align-self-start class": {
+        "prefix": "ass",
+        "description": "bootstrap align-self-start class",
+        "body": ["align-self-start"]
+    },
+    "bootstrap align-self-end class": {
+        "prefix": "ase",
+        "description": "bootstrap align-self-end class",
+        "body": ["align-self-end"]
+    },
+    "bootstrap align-self-stretch class": {
+        "prefix": "assch",
+        "description": "bootstrap align-self-stretch class",
+        "body": ["align-self-stretch"]
     }
 }

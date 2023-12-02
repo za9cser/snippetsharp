@@ -1,5 +1,8 @@
 # Change Log
 
+## 3.1
+- added js snippets for `align-items` and `align-self` bootstrap css classes
+- fixed description for some `justify-content` classes in README.md
 ## 3.0
 - added js snippets for `justify-content` bootstrap css classes
 ## 2.0.3

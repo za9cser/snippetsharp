@@ -5,14 +5,22 @@ Simple c# and js snippets pack that provides checks for strings and collections.
 
 
 ## Javascript
-Now It's snippets only for bootstrap classes `justify-content`
+There are snippets for bootstrap classes `justify-content`, `align-items`, `align-self`  
 | Shortcut | Generated Code            |
 | -------- | ------------------------- |
 | jcs      | `justify-content-start`   |
-| jcc      | `justify-content-start`   |
-| jce      | `justify-content-center`  |
+| jcc      | `justify-content-center`  |
+| jce      | `justify-content-end`     |
 | jcb      | `justify-content-between` |
 | jca      | `justify-content-around`  |
+| ais      | `align-items-start`       |
+| aic      | `align-items-center`      |
+| aie      | `align-items-end`         |
+| aisch    | `align-items-stretch`     |
+| ass      | `align-self-start`        |
+| asc      | `align-self-center`       |
+| ase      | `align-self-end`          |
+| assch    | `align-self-stretch`      |
 
 
 ## C#
